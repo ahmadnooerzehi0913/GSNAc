@@ -34,8 +34,8 @@ def handler(selected_dataset,
         raw_df = pd.read_excel(Path(__file__).parent / "datasets/wine/Wine.xlsx")
     
         #prepare dataset
+
         frac_of_samples_to_keep = 1
-        
     elif selected_dataset == 'breast':
         #https://machinelearningmastery.com/feature-selection-with-categorical-data/
          
@@ -57,20 +57,13 @@ def handler(selected_dataset,
         
         frac_of_samples_to_keep = 1
 
-    elif selected_dataset == 'cars_ts':
-        #read dataset into pandas df
-        raw_df = pd.read_excel(Path(__file__).parent / "datasets/cars_ts/cars_ts.xlsx")
-       
-        #prepare dataset
-        
-        frac_of_samples_to_keep = 1
-        
+
     elif selected_dataset == 'pokerhand':
         #https://machinelearningmastery.com/feature-selection-with-categorical-data/
-        
+
         #read dataset into pandas df
         raw_df = pd.read_excel(Path(__file__).parent / "datasets/pokerhand/pokerhand-full.xlsx")
-       
+
         #prepare dataset
         sample_name_column_name = "handname"
         categorical_feature_names = ["S1","C1","S2","C2","S3","C3","S4","C4","S5","C5"]
