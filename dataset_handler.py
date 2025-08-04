@@ -516,7 +516,7 @@ def handler(selected_dataset,
     raw_df.to_excel(writer, sheet_name = "Raw dataset")
     #save processed dataset into outputs folder for inspection
     df.to_excel(writer, sheet_name = "Processed dataset")
-    writer.save()
+    writer.close()
     
     if return_X_y:
         return X, y, df, categorical_feature_names
