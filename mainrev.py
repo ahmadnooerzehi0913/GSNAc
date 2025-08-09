@@ -146,7 +146,7 @@ def main(cv_value,
     e = ['SVM Linear', 'SVM RBF']
     f = ['SVM Linear']
     
-    classifiers_list = a
+    classifiers_list = b
     
     #then prepara required data: 
     #Dataset handler library returns data in processed format
@@ -288,7 +288,7 @@ def main(cv_value,
                 analysis_df.loc[test_sample, classifier + ' prediction'],  analysis_df.loc[test_sample,classifier + ' result'] = y_pred[i], y_pred[i] == analysis_df.loc[test_sample, 'class']  
         
     #save and release writers
-    writer_B.save()
+    writer_B.close()
     writer_B.handles = None
     
     
