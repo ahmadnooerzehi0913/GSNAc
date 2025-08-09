@@ -28,30 +28,8 @@ def handler(selected_dataset,
     sample n            |       |  |      | c2
     """    
 
-    # -------------------------------------------------------------------> local datasets <-----
-    if selected_dataset == 'breast':
-        #https://machinelearningmastery.com/feature-selection-with-categorical-data/
-         
-        #read dataset into pandas df
-        raw_df = pd.read_excel(Path(__file__).parent / "datasets/breast/breast.xlsx")
-       
-        #prepare dataset
-        sample_name_column_name = "samples"
-        categorical_feature_names = ["feature1","feature2","feature3","feature4","feature5","feature6","feature7","feature8","feature9"]
-        frac_of_samples_to_keep = 1
-
-    elif selected_dataset == "iris":
-        #https://www.kaggle.com/
-        
-        #read dataset into pandas df
-        raw_df = pd.read_excel(Path(__file__).parent / "datasets/iris/iris-bezdek.xlsx")
-    
-        #prepare dataset
-        frac_of_samples_to_keep = 1 
-
-        # df.columns[-1].rename('class')
-        
-    elif selected_dataset == "pima":
+    # -------------------------------------------------------------------> local datasets <-----        
+    if selected_dataset == "pima":
         #https://www.kaggle.com/kumargh/pimaindiansdiabetescsv?select=pima-indians-diabetes.csv
         
         #read dataset into pandas df
@@ -59,7 +37,7 @@ def handler(selected_dataset,
     
         #prepare dataset
         frac_of_samples_to_keep = 1 
-                
+        
     elif selected_dataset == 'make_moons':    
         # test classification dataset
         from sklearn.datasets import make_moons
@@ -72,58 +50,7 @@ def handler(selected_dataset,
         
         #prepare dataset
         frac_of_samples_to_keep = 1 
-    elif selected_dataset == 'titanic':    
-        #read dataset into pandas df
-        raw_df = pd.read_excel(Path(__file__).parent / "datasets/titanic/titanic_raw.xlsx")
-       
-        #prepare dataset
-        sample_name_column_name = "PassengerId"
-        irrelevant_feature_names = ["Name", "Ticket", "Cabin"]
-        categorical_feature_names = ["Embarked","Sex","Pclass"]
-        frac_of_samples_to_keep = 1
-      
-    # -------------------------------------------------------------------> sklearn datasets <-----
-    elif selected_dataset == 'make_hastie':    
-        # test classification dataset
-        from sklearn.datasets import make_hastie_10_2
-
-        # define dataset
-        X, y = make_hastie_10_2(n_samples=1000, random_state=seed_number)
-        
-        #combine X and y into pandas df
-        raw_df = pd.DataFrame(np.append(X, y[:, None], axis = 1))
-        
-        #prepare dataset
-        frac_of_samples_to_keep = 1         
-
-    elif selected_dataset == 'breast_cancer':    
-        #load classification dataset
-        from sklearn.datasets import load_breast_cancer
-
-        # define dataset
-        X, y = load_breast_cancer(return_X_y=True)
-        
-        #combine X and y into pandas df
-        raw_df = pd.DataFrame(np.append(X, y[:, None], axis = 1))
-        
-        #prepare dataset
-        frac_of_samples_to_keep = 1  
-
-    elif selected_dataset == 'digits':
-        #https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html#sklearn.datasets.load_digits
-
-        #load classification dataset
-        from sklearn.datasets import load_digits
-
-        # define dataset
-        X, y = load_digits(n_class = 10, return_X_y=True)
-        
-        #combine X and y into pandas df
-        raw_df = pd.DataFrame(np.append(X, y[:, None], axis = 1))
-        
-        #prepare dataset
-        frac_of_samples_to_keep = 1
-        
+                
     elif selected_dataset == 'make_blobs':    
         # test classification dataset
         from sklearn.datasets import make_blobs
@@ -140,6 +67,53 @@ def handler(selected_dataset,
         
         #prepare dataset
         frac_of_samples_to_keep = 1  
+        
+    elif selected_dataset == 'breast_cancer':    
+        #load classification dataset
+        from sklearn.datasets import load_breast_cancer
+
+        # define dataset
+        X, y = load_breast_cancer(return_X_y=True)
+        
+        #combine X and y into pandas df
+        raw_df = pd.DataFrame(np.append(X, y[:, None], axis = 1))
+        
+        #prepare dataset
+        frac_of_samples_to_keep = 1  
+        
+    elif selected_dataset == 'breast':
+        #https://machinelearningmastery.com/feature-selection-with-categorical-data/
+         
+        #read dataset into pandas df
+        raw_df = pd.read_excel(Path(__file__).parent / "datasets/breast/breast.xlsx")
+       
+        #prepare dataset
+        sample_name_column_name = "samples"
+        categorical_feature_names = ["feature1","feature2","feature3","feature4","feature5","feature6","feature7","feature8","feature9"]
+        frac_of_samples_to_keep = 1
+
+
+
+    elif selected_dataset == "iris":
+        #https://www.kaggle.com/
+        
+        #read dataset into pandas df
+        raw_df = pd.read_excel(Path(__file__).parent / "datasets/iris/iris-bezdek.xlsx")
+    
+        #prepare dataset
+        frac_of_samples_to_keep = 1 
+
+    
+    elif selected_dataset == 'titanic':    
+        #read dataset into pandas df
+        raw_df = pd.read_excel(Path(__file__).parent / "datasets/titanic/titanic_raw.xlsx")
+       
+        #prepare dataset
+        sample_name_column_name = "PassengerId"
+        irrelevant_feature_names = ["Name", "Ticket", "Cabin"]
+        categorical_feature_names = ["Embarked","Sex","Pclass"]
+        frac_of_samples_to_keep = 1
+      
         
     #Quick inspection before processing
     print("--------------------------------")
