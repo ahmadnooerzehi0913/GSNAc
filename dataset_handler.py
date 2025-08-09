@@ -59,7 +59,19 @@ def handler(selected_dataset,
     
         #prepare dataset
         frac_of_samples_to_keep = 1 
-    
+                
+    elif selected_dataset == 'make_moons':    
+        # test classification dataset
+        from sklearn.datasets import make_moons
+
+        # define dataset
+        X, y = make_moons(n_samples=500, random_state=seed_number)
+        
+        #combine X and y into pandas df
+        raw_df = pd.DataFrame(np.append(X, y[:, None], axis = 1))
+        
+        #prepare dataset
+        frac_of_samples_to_keep = 1 
     elif selected_dataset == 'titanic':    
         #read dataset into pandas df
         raw_df = pd.read_excel(Path(__file__).parent / "datasets/titanic/titanic_raw.xlsx")
