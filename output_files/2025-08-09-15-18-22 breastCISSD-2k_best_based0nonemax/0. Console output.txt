@@ -1,0 +1,253 @@
+--------------------------------
+Dataset charecteristics BEFORE processing:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 287 entries, 0 to 286
+Data columns (total 11 columns):
+ #   Column    Non-Null Count  Dtype 
+---  ------    --------------  ----- 
+ 0   samples   287 non-null    object
+ 1   feature1  287 non-null    object
+ 2   feature2  287 non-null    object
+ 3   feature3  287 non-null    object
+ 4   feature4  287 non-null    object
+ 5   feature5  279 non-null    object
+ 6   feature6  287 non-null    object
+ 7   feature7  287 non-null    object
+ 8   feature8  286 non-null    object
+ 9   feature9  287 non-null    object
+ 10  class     287 non-null    object
+dtypes: object(11)
+memory usage: 24.8+ KB
+None
+--------------------------------
+--------------------------------
+Dataset charecteristics AFTER processing:
+<class 'pandas.core.frame.DataFrame'>
+Index: 278 entries, patient1 to patient287
+Data columns (total 33 columns):
+ #   Column                Non-Null Count  Dtype 
+---  ------                --------------  ----- 
+ 0   feature1_'30-39'      278 non-null    bool  
+ 1   feature1_'40-49'      278 non-null    bool  
+ 2   feature1_'50-59'      278 non-null    bool  
+ 3   feature1_'60-69'      278 non-null    bool  
+ 4   feature1_'70-79'      278 non-null    bool  
+ 5   feature2_'lt40'       278 non-null    bool  
+ 6   feature2_'premeno'    278 non-null    bool  
+ 7   feature3_'10-14'      278 non-null    bool  
+ 8   feature3_'15-19'      278 non-null    bool  
+ 9   feature3_'20-24'      278 non-null    bool  
+ 10  feature3_'25-29'      278 non-null    bool  
+ 11  feature3_'30-34'      278 non-null    bool  
+ 12  feature3_'35-39'      278 non-null    bool  
+ 13  feature3_'40-44'      278 non-null    bool  
+ 14  feature3_'45-49'      278 non-null    bool  
+ 15  feature3_'5-9'        278 non-null    bool  
+ 16  feature3_'50-54'      278 non-null    bool  
+ 17  feature4_'12-14'      278 non-null    bool  
+ 18  feature4_'15-17'      278 non-null    bool  
+ 19  feature4_'24-26'      278 non-null    bool  
+ 20  feature4_'3-5'        278 non-null    bool  
+ 21  feature4_'6-8'        278 non-null    bool  
+ 22  feature4_'9-11'       278 non-null    bool  
+ 23  feature5_'yes'        278 non-null    bool  
+ 24  feature6_'2'          278 non-null    bool  
+ 25  feature6_'3'          278 non-null    bool  
+ 26  feature7_'right'      278 non-null    bool  
+ 27  feature8_'left_low'   278 non-null    bool  
+ 28  feature8_'left_up'    278 non-null    bool  
+ 29  feature8_'right_low'  278 non-null    bool  
+ 30  feature8_'right_up'   278 non-null    bool  
+ 31  feature9_'yes'        278 non-null    bool  
+ 32  class                 278 non-null    object
+dtypes: bool(32), object(1)
+memory usage: 13.0+ KB
+None
+--------------------------------
+SVM Linear started..
+SVM RBF started..
+kNN started..
+Gaussian RBF started..
+Decision Tree started..
+Random Forest started..
+Naive Bayes Gaussian started..
+AdaBoost started..
+ANN - MLP started..
+--------------------------------
+Dataset charecteristics BEFORE processing:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 287 entries, 0 to 286
+Data columns (total 11 columns):
+ #   Column    Non-Null Count  Dtype 
+---  ------    --------------  ----- 
+ 0   samples   287 non-null    object
+ 1   feature1  287 non-null    object
+ 2   feature2  287 non-null    object
+ 3   feature3  287 non-null    object
+ 4   feature4  287 non-null    object
+ 5   feature5  279 non-null    object
+ 6   feature6  287 non-null    object
+ 7   feature7  287 non-null    object
+ 8   feature8  286 non-null    object
+ 9   feature9  287 non-null    object
+ 10  class     287 non-null    object
+dtypes: object(11)
+memory usage: 24.8+ KB
+None
+--------------------------------
+--------------------------------
+Dataset charecteristics AFTER processing:
+<class 'pandas.core.frame.DataFrame'>
+Index: 278 entries, patient1 to patient287
+Data columns (total 10 columns):
+ #   Column    Non-Null Count  Dtype 
+---  ------    --------------  ----- 
+ 0   feature1  278 non-null    object
+ 1   feature2  278 non-null    object
+ 2   feature3  278 non-null    object
+ 3   feature4  278 non-null    object
+ 4   feature5  278 non-null    object
+ 5   feature6  278 non-null    object
+ 6   feature7  278 non-null    object
+ 7   feature8  278 non-null    object
+ 8   feature9  278 non-null    object
+ 9   class     278 non-null    object
+dtypes: object(10)
+memory usage: 23.9+ KB
+None
+--------------------------------
+Raw feature importances (before optional selection step) are:
+{'feature1': np.float64(2.910398758118884), 'feature2': np.float64(1.6557127559318394), 'feature3': np.float64(4.534025381911347), 'feature4': np.float64(24.7755506800416), 'feature5': np.float64(27.256955497548862), 'feature6': np.float64(16.653273962193577), 'feature7': np.float64(2.152670948807083), 'feature8': np.float64(0.0001428878063345691), 'feature9': np.float64(9.637397946811095)}
+['categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical']
+Final feature importances are:
+{'feature1': np.float64(3.25), 'feature2': np.float64(1.85), 'feature3': np.float64(5.06), 'feature4': np.float64(27.66), 'feature5': np.float64(30.43), 'feature6': np.float64(18.59), 'feature7': np.float64(2.4), 'feature8': np.float64(0.0), 'feature9': np.float64(10.76)}
+['categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical']
+--------------------------------
+Graph status: -Fold 1 d Initial raw graph
+*nb_of_nodes 278
+*average_degree_of_a_node 272.50359712230215
+*nb_of_edges 37878
+*average_weight_of_an_edge 0.3663712758164344
+*minimum_weight_of_an_edge 0.009293181612239021
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 1 e Decorated graph
+*nb_of_nodes 278
+*average_degree_of_a_node 272.50359712230215
+*nb_of_edges 37878
+*average_weight_of_an_edge 0.3663712758164344
+*minimum_weight_of_an_edge 0.009293181612239021
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 1 f Kernel of the graph
+*nb_of_nodes 139
+*average_degree_of_a_node 7.899280575539568
+*nb_of_edges 549
+*average_weight_of_an_edge 0.6972576926724856
+*minimum_weight_of_an_edge 0.38056477336205674
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? False
+*Number of connected components: 2
+--------------------------------
+--------------------------------
+Graph status: -Fold 1 g SNA metrics added to kernel
+*nb_of_nodes 139
+*average_degree_of_a_node 7.899280575539568
+*nb_of_edges 549
+*average_weight_of_an_edge 0.5092704654816151
+*minimum_weight_of_an_edge 9.999999999998899e-05
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? False
+*Number of connected components: 2
+--------------------------------
+
+ patient4
+0.3310768847108932
+0.32956906824114796
+margin:  0.004575115249110473
+prediction by weight:  CL-'recurrence-events'
+prediction by cosine:  CL-'recurrence-events'
+
+ patient26
+0.3043393925526255
+0.303866514846108
+margin:  0.0015562020933994614
+prediction by weight:  CL-'recurrence-events'
+prediction by cosine:  CL-'recurrence-events'
+Fold: 1
+Misclassification: 44 out of 139
+Accuracy: 0.6834532374100719
+--------------------------------
+Graph status: -Fold 1 i Prediction graph
+*nb_of_nodes 139
+*average_degree_of_a_node 7.899280575539568
+*nb_of_edges 549
+*average_weight_of_an_edge 0.5092704654816151
+*minimum_weight_of_an_edge 9.999999999998899e-05
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? False
+*Number of connected components: 2
+--------------------------------
+Raw feature importances (before optional selection step) are:
+{'feature1': np.float64(0.10841237257295684), 'feature2': np.float64(0.023345350366636188), 'feature3': np.float64(1.652235432484998), 'feature4': np.float64(9.728490883854935), 'feature5': np.float64(3.770381338048889), 'feature6': np.float64(16.153562008913767), 'feature7': np.float64(0.2292241245654913), 'feature8': np.float64(1.655435232781546), 'feature9': np.float64(5.5625484904251525)}
+['categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical']
+Final feature importances are:
+{'feature1': np.float64(0.28), 'feature2': np.float64(0.06), 'feature3': np.float64(4.25), 'feature4': np.float64(25.02), 'feature5': np.float64(9.7), 'feature6': np.float64(41.54), 'feature7': np.float64(0.59), 'feature8': np.float64(4.26), 'feature9': np.float64(14.31)}
+['categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical', 'categorical']
+--------------------------------
+Graph status: -Fold 2 d Initial raw graph
+*nb_of_nodes 278
+*average_degree_of_a_node 273.53237410071944
+*nb_of_edges 38021
+*average_weight_of_an_edge 0.31600036912967977
+*minimum_weight_of_an_edge 0.00030001500750209686
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 2 e Decorated graph
+*nb_of_nodes 278
+*average_degree_of_a_node 273.53237410071944
+*nb_of_edges 38021
+*average_weight_of_an_edge 0.31600036912967977
+*minimum_weight_of_an_edge 0.00030001500750209686
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 2 f Kernel of the graph
+*nb_of_nodes 139
+*average_degree_of_a_node 7.553956834532374
+*nb_of_edges 525
+*average_weight_of_an_edge 0.7255816482560621
+*minimum_weight_of_an_edge 0.3735331182539595
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? False
+*Number of connected components: 3
+--------------------------------
+--------------------------------
+Graph status: -Fold 2 g SNA metrics added to kernel
+*nb_of_nodes 139
+*average_degree_of_a_node 7.553956834532374
+*nb_of_edges 525
+*average_weight_of_an_edge 0.5225298279915068
+*minimum_weight_of_an_edge 9.999999999998899e-05
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? False
+*Number of connected components: 3
+--------------------------------
+
+ patient99
+0.44789162533351573
+0.44510800110698745
+margin:  0.006253817544518148
+prediction by weight:  CL-'recurrence-events'
+prediction by cosine:  CL-'recurrence-events'

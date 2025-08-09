@@ -85,8 +85,9 @@ def main(cv_value,
     pokerhand
     """
 
-    #Name of the dataset to experiment
-    selected_dataset = 'iris' if (args.selected_dataset is None) else args.selected_dataset
+    #Name of the dataset to experiment   titanic
+    # selected_dataset = 'iris' if (args.selected_dataset is None) else args.selected_dataset
+    selected_dataset = 'titanic' if (args.selected_dataset is None) else args.selected_dataset
 
     #set a random seed number 
     #it is needed for some functions and used for reproducibility of results
@@ -211,6 +212,8 @@ def main(cv_value,
             
             test_part = processed_df.loc[processed_df.index[test],:]
             test_part.iloc[:,0:-1] = X[test]
+
+            
             
             #train-test flags to samples
             train_part['flag'] = 'Train'
@@ -254,7 +257,7 @@ def main(cv_value,
                 
             elif classifier == 'Naive Bayes Gaussian':
                 from sklearn.naive_bayes import GaussianNB
-                clf = GaussianNB()
+                clf = GaussianNB(var_smoothing=1e-5)
                 
             elif classifier == 'QDA':
                 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
@@ -266,7 +269,7 @@ def main(cv_value,
                 
             elif classifier == 'ANN - MLP':
                 from sklearn.neural_network import MLPClassifier
-                clf = MLPClassifier(max_iter=2000)
+                clf = MLPClassifier(max_iter=5000)
                 
             """#temp size checker
             import pickle
@@ -275,7 +278,6 @@ def main(cv_value,
             p = pickle.dumps(clf)
             print(classifier, " size ", sys.getsizeof(p))
             """
-
             
             #2: fit classifier with train data
             clf.fit(X[train], y[train].ravel())

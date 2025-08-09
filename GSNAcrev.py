@@ -908,7 +908,7 @@ class SnacClassifier(BaseEstimator, ClassifierMixin):
         
         #Step 2: Creation of corresponding undiredcted graph based on adjacency
         #self loops and parallel edges are not allowed
-        G_raw = nx.from_numpy_matrix(adjacency_matrix, parallel_edges=False, create_using = nx.Graph)           
+        G_raw = nx.from_numpy_array(adjacency_matrix, parallel_edges=False, create_using = nx.Graph)           
           
         #Reporting
         """
