@@ -125,15 +125,22 @@ def main(cv_value,
     #Reporting and log files folder path
     import sys, os                
     working_directory = os.path.dirname(os.path.realpath(__file__))
-    os.chdir(working_directory)
-    foldername = working_directory + '/output_files/' + currenttime + ' ' + selected_dataset + 'CISSD-' + str(cv_value) + feature_importance_model + str(seed_number) + feature_selection_method + dist_to_similarity_method + '/'
-    os.makedirs(os.path.dirname(foldername))
-    
-    #enabling below dumps console output in to a text file within reporting folder
-    if True: 
-        logfilename = '0. Console output.txt'
-        sys.stdout = open(foldername + logfilename, 'w')
-    
+    parent_directory = os.path.dirname(working_directory)  
+    foldername = os.path.join(
+        parent_directory,
+        'output_files',
+        currenttime + ' ' + selected_dataset + 'CISSD-' +
+        str(cv_value) + feature_importance_model +
+        str(seed_number) + feature_selection_method +
+        dist_to_similarity_method
+    )
+
+    os.makedirs(foldername, exist_ok=True)  
+
+
+    if True:
+        sys.stdout = open('0. Console output.txt', 'w')
+        
     
     
     #Step 2A. PREPARATION OF DATA and CLASSIFICATION WITH CONVENTIONAL CLASSIFIERS
@@ -168,7 +175,7 @@ def main(cv_value,
     
     #Reporting:
     #below will store processed data in each fold
-    writer_B = pd.ExcelWriter(foldername + '-B. Fold Data.xlsx')
+    writer_B = pd.ExcelWriter(foldername + '/-B. Fold Data.xlsx')
     
     #below will store classification report for each individual data sample
     analysis_df = pd.DataFrame(processed_df['class'])
@@ -359,7 +366,7 @@ def main(cv_value,
     print(performance_summary.head(100))
     
     #output results in to a file
-    writer_C = pd.ExcelWriter(foldername + '-C. Performance.xlsx')
+    writer_C = pd.ExcelWriter(foldername + '/-C. Performance.xlsx')
     analysis_df.to_excel(writer_C, sheet_name = 'Analysis')   
     performance_summary.to_excel(writer_C, sheet_name = 'Summary')
     
