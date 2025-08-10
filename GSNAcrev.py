@@ -121,7 +121,7 @@ class SnacClassifier(BaseEstimator, ClassifierMixin):
             #We label dataset samples as train or test
             X_y_dataset_train_and_test.loc[X_train_sample_names, 'train_test_flag'] = 'Train'
             X_y_dataset_train_and_test.loc[X_test_sample_names, 'train_test_flag'] = 'Test'
-            if self.reporting: X_y_dataset_train_and_test.to_excel(self.output_folder_path + '-Fold ' + str(fold_no + 1) + ' a X_y_dataset_train_and_test.xlsx')
+            if self.reporting: X_y_dataset_train_and_test.to_excel(self.output_folder_path + '/-Fold ' + str(fold_no + 1) + ' a X_y_dataset_train_and_test.xlsx')
             
             #-NORMALIZATION and ENCODING OF FOLDED DATA
             #---------------------------------------
@@ -547,7 +547,7 @@ class SnacClassifier(BaseEstimator, ClassifierMixin):
                 
                 
                 if self.reporting: 
-                    edges_df.to_excel(self.output_folder_path + str(test_node) + " A1 raw.xlsx")
+                    edges_df.to_excel(self.output_folder_path + "/" + str(test_node) + " A1 raw.xlsx")
                 
                                              
                 #prediction strategy starts here; 
@@ -568,7 +568,7 @@ class SnacClassifier(BaseEstimator, ClassifierMixin):
                 #this is the list of ALL edges to test_node, sorted by importance factor
                 edges_df.sort_values(by=importance_factor, ascending = False, inplace = True)
                 if self.reporting: 
-                    edges_df.to_excel(self.output_folder_path + str(test_node) + " A2 list of all edges.xlsx")
+                    edges_df.to_excel(self.output_folder_path + "/" + str(test_node) + " A2 list of all edges.xlsx")
                 
 
                 #filter out edges, according to number of class representations
@@ -582,13 +582,13 @@ class SnacClassifier(BaseEstimator, ClassifierMixin):
                 top_n_rows = grouped_df.head(k_of_edges)
                 
                 if self.reporting: 
-                    top_n_rows.to_excel(self.output_folder_path + str(test_node) + " A3 top n rows.xlsx")
+                    top_n_rows.to_excel(self.output_folder_path + "/" + str(test_node) + " A3 top n rows.xlsx")
                 
                 #compile a prediction df                
                 prediction_df = top_n_rows.groupby('original_class')[[importance_factor]].mean()
                 
                 if self.reporting: 
-                    prediction_df.to_excel(self.output_folder_path + str(test_node) + " B average importances by class.xlsx")
+                    prediction_df.to_excel(self.output_folder_path + "/" + str(test_node) + " B average importances by class.xlsx")
                 
                 prediction_df.sort_values(by=importance_factor, ascending = False, inplace = True)
 
@@ -617,7 +617,7 @@ class SnacClassifier(BaseEstimator, ClassifierMixin):
                     
                     edges_df.sort_values(by=importance_factor, ascending = False, inplace = True)
                     if self.reporting: 
-                        edges_df.to_excel(self.output_folder_path + str(test_node) + " A2 second round list of all edges.xlsx")
+                        edges_df.to_excel(self.output_folder_path + "/" + str(test_node) + " A2 second round list of all edges.xlsx")
                     
 
                     #filter out edges, according to number of class representations
@@ -631,13 +631,13 @@ class SnacClassifier(BaseEstimator, ClassifierMixin):
                     top_n_rows = grouped_df.head(k_of_edges)
                     
                     if self.reporting: 
-                        top_n_rows.to_excel(self.output_folder_path + str(test_node) + " A3 second round top n rows.xlsx")
+                        top_n_rows.to_excel(self.output_folder_path + "/"+ str(test_node) + " A3 second round top n rows.xlsx")
                     
                     #compile a prediction df                
                     prediction_df = top_n_rows.groupby('original_class')[[importance_factor]].mean()
                     
                     if self.reporting: 
-                        prediction_df.to_excel(self.output_folder_path + str(test_node) + " B  second round average importances by class.xlsx")
+                        prediction_df.to_excel(self.output_folder_path + "/" + str(test_node) + " B  second round average importances by class.xlsx")
                     
                     
                     prediction_df.sort_values(by=importance_factor, ascending = False, inplace = True)
@@ -669,7 +669,7 @@ class SnacClassifier(BaseEstimator, ClassifierMixin):
                     prediction_result = str(prediction == G_kernel_and_test.nodes[test_node]['original_class_of_node'])
                     real_class = str(G_kernel_and_test.nodes[test_node]['original_class_of_node'])
                     
-                    nx.write_gexf(G_kernel_and_test,self.output_folder_path + test_node + ' F ' + prediction_result + ' F' + str(fold_no+1) + ' C' + real_class +'.gexf') 
+                    nx.write_gexf(G_kernel_and_test,self.output_folder_path + "/" + test_node + ' F ' + prediction_result + ' F' + str(fold_no+1) + ' C' + real_class +'.gexf') 
                 
                 
                 if prediction != G_kernel_and_test.nodes[test_node]['original_class_of_node']: 
@@ -960,7 +960,7 @@ class SnacClassifier(BaseEstimator, ClassifierMixin):
         #export graph
         #nx.write_graphml(G, self.output_folder_path + status + '.graphml')
         #nx.write_gml(G, self.output_folder_path + status + '.gml')
-        nx.write_gexf(G, self.output_folder_path + status + '.gexf')
+        nx.write_gexf(G, self.output_folder_path + "/" + status + '.gexf')
         
         return None
        

@@ -206,7 +206,7 @@ def handler(selected_dataset,
     
     #Backup given dataset and processed dataset
     #Create a Pandas Excel writer using XlsxWriter as the engine.
-    writer = pd.ExcelWriter(output_folder_path + "-A. Datasets " + str(one_hot_encoding) + ".xlsx")
+    writer = pd.ExcelWriter(output_folder_path + "/-A. Datasets " + str(one_hot_encoding) + ".xlsx")
     #save raw dataset into outputs folder for inspection
     raw_df.to_excel(writer, sheet_name = "Raw dataset")
     #save processed dataset into outputs folder for inspection
