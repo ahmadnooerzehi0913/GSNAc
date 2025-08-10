@@ -1,41 +1,85 @@
 --------------------------------
 Dataset charecteristics BEFORE processing:
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 768 entries, 0 to 767
-Data columns (total 9 columns):
+RangeIndex: 569 entries, 0 to 568
+Data columns (total 31 columns):
  #   Column  Non-Null Count  Dtype  
 ---  ------  --------------  -----  
- 0   preg    768 non-null    int64  
- 1   plas    768 non-null    int64  
- 2   pres    768 non-null    int64  
- 3   skin    768 non-null    int64  
- 4   test    768 non-null    int64  
- 5   mass    768 non-null    float64
- 6   pedi    768 non-null    float64
- 7   age     768 non-null    int64  
- 8   class   768 non-null    int64  
-dtypes: float64(2), int64(7)
-memory usage: 54.1 KB
+ 0   0       569 non-null    float64
+ 1   1       569 non-null    float64
+ 2   2       569 non-null    float64
+ 3   3       569 non-null    float64
+ 4   4       569 non-null    float64
+ 5   5       569 non-null    float64
+ 6   6       569 non-null    float64
+ 7   7       569 non-null    float64
+ 8   8       569 non-null    float64
+ 9   9       569 non-null    float64
+ 10  10      569 non-null    float64
+ 11  11      569 non-null    float64
+ 12  12      569 non-null    float64
+ 13  13      569 non-null    float64
+ 14  14      569 non-null    float64
+ 15  15      569 non-null    float64
+ 16  16      569 non-null    float64
+ 17  17      569 non-null    float64
+ 18  18      569 non-null    float64
+ 19  19      569 non-null    float64
+ 20  20      569 non-null    float64
+ 21  21      569 non-null    float64
+ 22  22      569 non-null    float64
+ 23  23      569 non-null    float64
+ 24  24      569 non-null    float64
+ 25  25      569 non-null    float64
+ 26  26      569 non-null    float64
+ 27  27      569 non-null    float64
+ 28  28      569 non-null    float64
+ 29  29      569 non-null    float64
+ 30  30      569 non-null    float64
+dtypes: float64(31)
+memory usage: 137.9 KB
 None
 --------------------------------
 --------------------------------
 Dataset charecteristics AFTER processing:
 <class 'pandas.core.frame.DataFrame'>
-Index: 768 entries, SP-1 to SP-768
-Data columns (total 9 columns):
+Index: 569 entries, SP-1 to SP-569
+Data columns (total 31 columns):
  #   Column  Non-Null Count  Dtype  
 ---  ------  --------------  -----  
- 0   preg    768 non-null    int64  
- 1   plas    768 non-null    int64  
- 2   pres    768 non-null    int64  
- 3   skin    768 non-null    int64  
- 4   test    768 non-null    int64  
- 5   mass    768 non-null    float64
- 6   pedi    768 non-null    float64
- 7   age     768 non-null    int64  
- 8   class   768 non-null    object 
-dtypes: float64(2), int64(6), object(1)
-memory usage: 60.0+ KB
+ 0   0       569 non-null    float64
+ 1   1       569 non-null    float64
+ 2   2       569 non-null    float64
+ 3   3       569 non-null    float64
+ 4   4       569 non-null    float64
+ 5   5       569 non-null    float64
+ 6   6       569 non-null    float64
+ 7   7       569 non-null    float64
+ 8   8       569 non-null    float64
+ 9   9       569 non-null    float64
+ 10  10      569 non-null    float64
+ 11  11      569 non-null    float64
+ 12  12      569 non-null    float64
+ 13  13      569 non-null    float64
+ 14  14      569 non-null    float64
+ 15  15      569 non-null    float64
+ 16  16      569 non-null    float64
+ 17  17      569 non-null    float64
+ 18  18      569 non-null    float64
+ 19  19      569 non-null    float64
+ 20  20      569 non-null    float64
+ 21  21      569 non-null    float64
+ 22  22      569 non-null    float64
+ 23  23      569 non-null    float64
+ 24  24      569 non-null    float64
+ 25  25      569 non-null    float64
+ 26  26      569 non-null    float64
+ 27  27      569 non-null    float64
+ 28  28      569 non-null    float64
+ 29  29      569 non-null    float64
+ 30  class   569 non-null    object 
+dtypes: float64(30), object(1)
+memory usage: 142.2+ KB
 None
 --------------------------------
 SVM Linear started..
@@ -50,860 +94,690 @@ ANN - MLP started..
 --------------------------------
 Dataset charecteristics BEFORE processing:
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 768 entries, 0 to 767
-Data columns (total 9 columns):
+RangeIndex: 569 entries, 0 to 568
+Data columns (total 31 columns):
  #   Column  Non-Null Count  Dtype  
 ---  ------  --------------  -----  
- 0   preg    768 non-null    int64  
- 1   plas    768 non-null    int64  
- 2   pres    768 non-null    int64  
- 3   skin    768 non-null    int64  
- 4   test    768 non-null    int64  
- 5   mass    768 non-null    float64
- 6   pedi    768 non-null    float64
- 7   age     768 non-null    int64  
- 8   class   768 non-null    int64  
-dtypes: float64(2), int64(7)
-memory usage: 54.1 KB
+ 0   0       569 non-null    float64
+ 1   1       569 non-null    float64
+ 2   2       569 non-null    float64
+ 3   3       569 non-null    float64
+ 4   4       569 non-null    float64
+ 5   5       569 non-null    float64
+ 6   6       569 non-null    float64
+ 7   7       569 non-null    float64
+ 8   8       569 non-null    float64
+ 9   9       569 non-null    float64
+ 10  10      569 non-null    float64
+ 11  11      569 non-null    float64
+ 12  12      569 non-null    float64
+ 13  13      569 non-null    float64
+ 14  14      569 non-null    float64
+ 15  15      569 non-null    float64
+ 16  16      569 non-null    float64
+ 17  17      569 non-null    float64
+ 18  18      569 non-null    float64
+ 19  19      569 non-null    float64
+ 20  20      569 non-null    float64
+ 21  21      569 non-null    float64
+ 22  22      569 non-null    float64
+ 23  23      569 non-null    float64
+ 24  24      569 non-null    float64
+ 25  25      569 non-null    float64
+ 26  26      569 non-null    float64
+ 27  27      569 non-null    float64
+ 28  28      569 non-null    float64
+ 29  29      569 non-null    float64
+ 30  30      569 non-null    float64
+dtypes: float64(31)
+memory usage: 137.9 KB
 None
 --------------------------------
 --------------------------------
 Dataset charecteristics AFTER processing:
 <class 'pandas.core.frame.DataFrame'>
-Index: 768 entries, SP-1 to SP-768
-Data columns (total 9 columns):
+Index: 569 entries, SP-1 to SP-569
+Data columns (total 31 columns):
  #   Column  Non-Null Count  Dtype  
 ---  ------  --------------  -----  
- 0   preg    768 non-null    int64  
- 1   plas    768 non-null    int64  
- 2   pres    768 non-null    int64  
- 3   skin    768 non-null    int64  
- 4   test    768 non-null    int64  
- 5   mass    768 non-null    float64
- 6   pedi    768 non-null    float64
- 7   age     768 non-null    int64  
- 8   class   768 non-null    object 
-dtypes: float64(2), int64(6), object(1)
-memory usage: 60.0+ KB
+ 0   0       569 non-null    float64
+ 1   1       569 non-null    float64
+ 2   2       569 non-null    float64
+ 3   3       569 non-null    float64
+ 4   4       569 non-null    float64
+ 5   5       569 non-null    float64
+ 6   6       569 non-null    float64
+ 7   7       569 non-null    float64
+ 8   8       569 non-null    float64
+ 9   9       569 non-null    float64
+ 10  10      569 non-null    float64
+ 11  11      569 non-null    float64
+ 12  12      569 non-null    float64
+ 13  13      569 non-null    float64
+ 14  14      569 non-null    float64
+ 15  15      569 non-null    float64
+ 16  16      569 non-null    float64
+ 17  17      569 non-null    float64
+ 18  18      569 non-null    float64
+ 19  19      569 non-null    float64
+ 20  20      569 non-null    float64
+ 21  21      569 non-null    float64
+ 22  22      569 non-null    float64
+ 23  23      569 non-null    float64
+ 24  24      569 non-null    float64
+ 25  25      569 non-null    float64
+ 26  26      569 non-null    float64
+ 27  27      569 non-null    float64
+ 28  28      569 non-null    float64
+ 29  29      569 non-null    float64
+ 30  class   569 non-null    object 
+dtypes: float64(30), object(1)
+memory usage: 142.2+ KB
 None
 --------------------------------
 Raw feature importances (before optional selection step) are:
-{'preg': np.float64(26.03460782154276), 'plas': np.float64(110.94694178835859), 'pres': np.float64(4.267875450999744), 'skin': np.float64(0.9658477509694944), 'test': np.float64(1.2939715764061368), 'mass': np.float64(34.967778367789236), 'pedi': np.float64(7.4695352337291485), 'age': np.float64(32.33230694997673)}
-['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
+{0: np.float64(531.276481166195), 1: np.float64(85.17285211550163), 2: np.float64(571.4859419253738), 3: np.float64(469.42937347455637), 4: np.float64(58.93836979678942), 5: np.float64(243.17942637975997), 6: np.float64(407.40226454748966), 7: np.float64(689.0417761357478), 8: np.float64(53.013255039897665), 9: np.float64(0.3919797644185297), 10: np.float64(216.41489334528333), 11: np.float64(0.03267400484728263), 12: np.float64(205.01887332997842), 13: np.float64(187.4749771370848), 14: np.float64(1.7709628512632476), 15: np.float64(40.554667751490655), 16: np.float64(25.62616977212303), 17: np.float64(85.9984141555229), 18: np.float64(5.288190143965763e-06), 19: np.float64(1.7761583848079465), 20: np.float64(725.1329640720106), 21: np.float64(119.9959611104604), 22: np.float64(761.6691726236637), 23: np.float64(550.0274226784356), 24: np.float64(99.80938353475048), 25: np.float64(231.62019192680035), 26: np.float64(330.5134327671447), 27: np.float64(771.1003444694757), 28: np.float64(98.36424162131875), 29: np.float64(49.256702009477195)}
+['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
 Final feature importances are:
-{'preg': np.float64(11.93), 'plas': np.float64(50.83), 'pres': np.float64(1.96), 'skin': np.float64(0.44), 'test': np.float64(0.59), 'mass': np.float64(16.02), 'pedi': np.float64(3.42), 'age': np.float64(14.81)}
-['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
+{0: np.float64(6.98), 1: np.float64(1.12), 2: np.float64(7.51), 3: np.float64(6.17), 4: np.float64(0.77), 5: np.float64(3.19), 6: np.float64(5.35), 7: np.float64(9.05), 8: np.float64(0.7), 9: np.float64(0.01), 10: np.float64(2.84), 11: np.float64(0.0), 12: np.float64(2.69), 13: np.float64(2.46), 14: np.float64(0.02), 15: np.float64(0.53), 16: np.float64(0.34), 17: np.float64(1.13), 18: np.float64(0.0), 19: np.float64(0.02), 20: np.float64(9.53), 21: np.float64(1.58), 22: np.float64(10.01), 23: np.float64(7.23), 24: np.float64(1.31), 25: np.float64(3.04), 26: np.float64(4.34), 27: np.float64(10.13), 28: np.float64(1.29), 29: np.float64(0.65)}
+['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
 --------------------------------
 Graph status: -Fold 1 d Initial raw graph
-*nb_of_nodes 768
-*average_degree_of_a_node 766.9973958333334
-*nb_of_edges 294527
-*average_weight_of_an_edge 0.7201703868114132
-*minimum_weight_of_an_edge 0.0012644438344212583
-*maximum_weight_of_an_edge 0.9812032105224164
+*nb_of_nodes 569
+*average_degree_of_a_node 567.9964850615114
+*nb_of_edges 161595
+*average_weight_of_an_edge 0.764946740715092
+*minimum_weight_of_an_edge 0.022396708602080206
+*maximum_weight_of_an_edge 0.980105642763942
 *Is graph connected? True
 *Number of connected components: 1
 --------------------------------
 --------------------------------
 Graph status: -Fold 1 e Decorated graph
-*nb_of_nodes 768
-*average_degree_of_a_node 766.9973958333334
-*nb_of_edges 294527
-*average_weight_of_an_edge 0.7201703868114132
-*minimum_weight_of_an_edge 0.0012644438344212583
-*maximum_weight_of_an_edge 0.9812032105224164
+*nb_of_nodes 569
+*average_degree_of_a_node 567.9964850615114
+*nb_of_edges 161595
+*average_weight_of_an_edge 0.764946740715092
+*minimum_weight_of_an_edge 0.022396708602080206
+*maximum_weight_of_an_edge 0.980105642763942
 *Is graph connected? True
 *Number of connected components: 1
 --------------------------------
 --------------------------------
 Graph status: -Fold 1 f Kernel of the graph
-*nb_of_nodes 384
-*average_degree_of_a_node 7.0625
-*nb_of_edges 1356
-*average_weight_of_an_edge 0.9068867834263732
-*minimum_weight_of_an_edge 0.6407758465239293
-*maximum_weight_of_an_edge 0.9802063955706255
+*nb_of_nodes 455
+*average_degree_of_a_node 7.252747252747253
+*nb_of_edges 1650
+*average_weight_of_an_edge 0.9332417695536712
+*minimum_weight_of_an_edge 0.6829793926582475
+*maximum_weight_of_an_edge 0.9796736972460823
 *Is graph connected? True
 *Number of connected components: 1
 --------------------------------
 --------------------------------
 Graph status: -Fold 1 g SNA metrics added to kernel
-*nb_of_nodes 384
-*average_degree_of_a_node 7.0625
-*nb_of_edges 1356
-*average_weight_of_an_edge 0.7592102599605441
-*minimum_weight_of_an_edge 9.999999999998899e-05
-*maximum_weight_of_an_edge 1.0
+*nb_of_nodes 455
+*average_degree_of_a_node 7.252747252747253
+*nb_of_edges 1650
+*average_weight_of_an_edge 0.8285478599868529
+*minimum_weight_of_an_edge 0.00010000000000021103
+*maximum_weight_of_an_edge 1.0000000000000004
 *Is graph connected? True
 *Number of connected components: 1
 --------------------------------
 
- SP-5
-0.7766620124467307
-0.7758900792705397
-margin:  0.0009949001757012521
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
+ SP-92
+0.9290583126980287
+0.9277160463805185
+margin:  0.0014468503835274316
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
 
- SP-32
-0.875821464514126
-0.8719079713636512
-margin:  0.0044884245574154935
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
+ SP-100
+0.9462009674508582
+0.9408965589075129
+margin:  0.0056376107374698226
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
 
- SP-42
-0.86931520083882
-0.8628662949992577
-margin:  0.007473818222981876
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
+ SP-149
+0.9451112252139968
+0.9363608287260782
+margin:  0.00934511164870444
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
 
- SP-68
-0.8175579591637785
-0.8135460606986608
-margin:  0.00493137224667084
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
+ SP-264
+0.9424994282538004
+0.9357634265499473
+margin:  0.007198402408916449
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
 
- SP-96
-0.8763854176894891
-0.8742724484672038
-margin:  0.0024168315334536228
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
+ SP-341
+0.9503433032612509
+0.9497921831019781
+margin:  0.000580253416566201
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
 
- SP-154
-0.8641526346803076
-0.8565508192327749
-margin:  0.00887491468905699
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
+ SP-364
+0.9354750610169589
+0.9332480812087622
+margin:  0.0023862677599211235
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
 
- SP-161
-0.8714464402789731
-0.8695496746601257
-margin:  0.0021813194508857325
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
+ SP-386
+0.9408091801382075
+0.9358706723979096
+margin:  0.0052769125969556185
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
 
- SP-215
-0.8806734050226466
-0.8749017617399522
-margin:  0.006596904401262371
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-249
-0.8707271700105997
-0.8643707675309162
-margin:  0.007353791588580183
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-251
-0.8754151689260361
-0.8751379051841114
-margin:  0.00031682291474544044
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-262
-0.8502357971927998
-0.8461950384231467
-margin:  0.004775209716642914
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-283
-0.8892248922183685
-0.882826606929858
-margin:  0.007247499382422751
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-286
-0.8658862005940562
-0.8650537717085427
-margin:  0.000962285713024924
-prediction by weight:  CL-1
-prediction by cosine:  CL-0
-
- SP-296
-0.8678061308944245
-0.862572070869004
-margin:  0.006067968349760422
-prediction by weight:  CL-1
-prediction by cosine:  CL-0
-
- SP-305
-0.84909882765688
-0.8436778650470574
-margin:  0.006425393902588894
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-338
-0.8852853420121914
-0.8768695142434458
-margin:  0.009597582801138538
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-418
-0.8739539362883533
-0.8705921146820468
-margin:  0.003861534637876085
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-444
-0.8743063388842848
-0.8736847941958268
-margin:  0.0007114060958679502
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-457
-0.8044833730840315
-0.8044172030858312
-margin:  8.225830818453517e-05
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-465
-0.845888885213111
-0.8384774058121379
-margin:  0.008839211825623972
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-485
-0.8229239191865446
-0.8149681377886276
-margin:  0.00976207661259565
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-494
-0.8567318897540324
-0.856696288516134
-margin:  4.155642831138451e-05
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-518
-0.865815012696951
-0.8590611838922946
-margin:  0.007861871693533695
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-541
-0.8683556248225988
-0.862292121541697
-margin:  0.007031843535878268
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-561
-0.8624634507434348
-0.8559026849120297
-margin:  0.007665317502864699
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-569
-0.875814007563787
-0.8698800095957142
-margin:  0.006821628158613091
-prediction by weight:  CL-1
-prediction by cosine:  CL-0
-
- SP-585
-0.8532047674078727
-0.8480594691216218
-margin:  0.006067143253031704
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-593
-0.8677392527810339
-0.8673516299027333
-margin:  0.00044690396021285217
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-609
-0.864200289302469
-0.8573514543452857
-margin:  0.007988363374753282
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-658
-0.8516098962121227
-0.8476382934967388
-margin:  0.0046854923212587
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-668
-0.8745221310185737
-0.869195426798625
-margin:  0.00612831597557717
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-704
-0.8287097878003522
-0.8260413512957465
-margin:  0.003230390948854911
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-747
-0.8436329144026413
-0.8404811926200147
-margin:  0.0037499016162416687
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-757
-0.8806962941358405
-0.8792774413497612
-margin:  0.0016136576686207604
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
+ SP-414
+0.9466823427150866
+0.9421889549664091
+margin:  0.004769094060158796
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-0.0
 Fold: 1
-Misclassification: 97 out of 384
-Accuracy: 0.7473958333333333
+Misclassification: 6 out of 114
+Accuracy: 0.9473684210526316
 --------------------------------
 Graph status: -Fold 1 i Prediction graph
-*nb_of_nodes 384
-*average_degree_of_a_node 7.0625
-*nb_of_edges 1356
-*average_weight_of_an_edge 0.7592102599605441
-*minimum_weight_of_an_edge 9.999999999998899e-05
-*maximum_weight_of_an_edge 1.0
+*nb_of_nodes 455
+*average_degree_of_a_node 7.252747252747253
+*nb_of_edges 1650
+*average_weight_of_an_edge 0.8285478599868529
+*minimum_weight_of_an_edge 0.00010000000000021103
+*maximum_weight_of_an_edge 1.0000000000000004
 *Is graph connected? True
 *Number of connected components: 1
 --------------------------------
 Raw feature importances (before optional selection step) are:
-{'preg': np.float64(14.514834476299612), 'plas': np.float64(101.74674245316957), 'pres': np.float64(0.21644971521885512), 'skin': np.float64(3.8739872474843255), 'test': np.float64(16.12914567131941), 'mass': np.float64(36.7616113382769), 'pedi': np.float64(18.434293650910107), 'age': np.float64(15.39647271990114)}
-['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
+{0: np.float64(513.6119151864401), 1: np.float64(76.57783378743166), 2: np.float64(554.8795323657326), 3: np.float64(474.7552845752654), 4: np.float64(71.72278708227331), 5: np.float64(255.77486146619108), 6: np.float64(468.95378085572503), 7: np.float64(685.6496269600195), 8: np.float64(58.23308255467132), 9: np.float64(0.05596762857211937), 10: np.float64(223.14658553308382), 11: np.float64(0.044112735775794956), 12: np.float64(214.20873521292324), 13: np.float64(229.78045971940062), 14: np.float64(0.8991172976633389), 15: np.float64(47.75096540988784), 16: np.float64(39.55455983557168), 17: np.float64(100.42466161526755), 18: np.float64(0.09698744881464204), 19: np.float64(3.250644013696611), 20: np.float64(691.8104668271753), 21: np.float64(98.99294751327488), 22: np.float64(733.1297404742747), 23: np.float64(565.7794645559363), 24: np.float64(95.12345970960834), 25: np.float64(245.37225414711335), 26: np.float64(401.8443803055274), 27: np.float64(763.8720888060286), 28: np.float64(92.2506412731255), 29: np.float64(54.857312196512545)}
+['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
 Final feature importances are:
-{'preg': np.float64(7.01), 'plas': np.float64(49.14), 'pres': np.float64(0.1), 'skin': np.float64(1.87), 'test': np.float64(7.79), 'mass': np.float64(17.75), 'pedi': np.float64(8.9), 'age': np.float64(7.44)}
-['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
+{0: np.float64(6.62), 1: np.float64(0.99), 2: np.float64(7.15), 3: np.float64(6.12), 4: np.float64(0.92), 5: np.float64(3.3), 6: np.float64(6.04), 7: np.float64(8.83), 8: np.float64(0.75), 9: np.float64(0.0), 10: np.float64(2.87), 11: np.float64(0.0), 12: np.float64(2.76), 13: np.float64(2.96), 14: np.float64(0.01), 15: np.float64(0.62), 16: np.float64(0.51), 17: np.float64(1.29), 18: np.float64(0.0), 19: np.float64(0.04), 20: np.float64(8.91), 21: np.float64(1.28), 22: np.float64(9.44), 23: np.float64(7.29), 24: np.float64(1.23), 25: np.float64(3.16), 26: np.float64(5.18), 27: np.float64(9.84), 28: np.float64(1.19), 29: np.float64(0.71)}
+['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
 --------------------------------
 Graph status: -Fold 2 d Initial raw graph
-*nb_of_nodes 768
-*average_degree_of_a_node 766.9973958333334
-*nb_of_edges 294527
-*average_weight_of_an_edge 0.7225109056081014
-*minimum_weight_of_an_edge 0.013958995294262366
-*maximum_weight_of_an_edge 0.9783754101266754
+*nb_of_nodes 569
+*average_degree_of_a_node 567.9964850615114
+*nb_of_edges 161595
+*average_weight_of_an_edge 0.7669630254910984
+*minimum_weight_of_an_edge 0.021273370943341363
+*maximum_weight_of_an_edge 0.9810945249656446
 *Is graph connected? True
 *Number of connected components: 1
 --------------------------------
 --------------------------------
 Graph status: -Fold 2 e Decorated graph
-*nb_of_nodes 768
-*average_degree_of_a_node 766.9973958333334
-*nb_of_edges 294527
-*average_weight_of_an_edge 0.7225109056081014
-*minimum_weight_of_an_edge 0.013958995294262366
-*maximum_weight_of_an_edge 0.9783754101266754
+*nb_of_nodes 569
+*average_degree_of_a_node 567.9964850615114
+*nb_of_edges 161595
+*average_weight_of_an_edge 0.7669630254910984
+*minimum_weight_of_an_edge 0.021273370943341363
+*maximum_weight_of_an_edge 0.9810945249656446
 *Is graph connected? True
 *Number of connected components: 1
 --------------------------------
 --------------------------------
 Graph status: -Fold 2 f Kernel of the graph
-*nb_of_nodes 384
-*average_degree_of_a_node 7.041666666666667
-*nb_of_edges 1352
-*average_weight_of_an_edge 0.902624843764228
-*minimum_weight_of_an_edge 0.6622318169919981
-*maximum_weight_of_an_edge 0.9783754101266754
+*nb_of_nodes 455
+*average_degree_of_a_node 7.265934065934066
+*nb_of_edges 1653
+*average_weight_of_an_edge 0.935545208630342
+*minimum_weight_of_an_edge 0.6963733522259556
+*maximum_weight_of_an_edge 0.9810945249656446
 *Is graph connected? True
 *Number of connected components: 1
 --------------------------------
 --------------------------------
 Graph status: -Fold 2 g SNA metrics added to kernel
-*nb_of_nodes 384
-*average_degree_of_a_node 7.041666666666667
-*nb_of_edges 1352
-*average_weight_of_an_edge 0.6707487087697613
+*nb_of_nodes 455
+*average_degree_of_a_node 7.265934065934066
+*nb_of_edges 1653
+*average_weight_of_an_edge 0.828719180511895
 *minimum_weight_of_an_edge 0.00010000000000021103
 *maximum_weight_of_an_edge 1.0000000000000004
 *Is graph connected? True
 *Number of connected components: 1
 --------------------------------
 
- SP-21
-0.8903227608951818
-0.8838784897624149
-margin:  0.007290901642486025
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
+ SP-158
+0.9310167792446284
+0.9246943638427535
+margin:  0.0068373028419908
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-1.0
 
- SP-25
-0.830449908095741
-0.8248238403885549
-margin:  0.006820932460603668
-prediction by weight:  CL-1
-prediction by cosine:  CL-0
+ SP-256
+0.9526507114832136
+0.9482099263763228
+margin:  0.004683335391627574
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
 
- SP-29
-0.783703436923173
-0.779694461176608
-margin:  0.005141726594434459
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-35
-0.8504873707272077
-0.8425202814555537
-margin:  0.009456258142403362
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-40
-0.7698771738484329
-0.7626064700101635
-margin:  0.009534018034455638
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-62
-0.8721909627507938
-0.8677257886077673
-margin:  0.005145835472045501
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-85
-0.8357322873719757
-0.834780262905556
-margin:  0.001140449180130565
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-89
-0.7901888020930241
-0.782740393324363
-margin:  0.009515809880498383
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-108
-0.8783745583124606
-0.8709927086649839
-margin:  0.00847521405637397
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-116
-0.8257323373195274
-0.8220386293533283
-margin:  0.004493350840586219
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-145
-0.8548875754080195
-0.8544251954727214
-margin:  0.0005411590596204885
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-149
-0.8138742128424882
-0.8068427799389061
-margin:  0.008714749736143723
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-156
-0.8162394267748522
-0.8083983911275638
-margin:  0.009699469634460334
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-180
-0.8518333437436325
-0.85003391471582
-margin:  0.0021168908636004513
-prediction by weight:  CL-1
-prediction by cosine:  CL-0
-
- SP-185
-0.8731875688942593
-0.8678952966579861
-margin:  0.006097823385668999
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-188
-0.8418743472379301
-0.8387065802090832
-margin:  0.00377696694362073
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-200
-0.8555714552537695
-0.8503942717938573
-margin:  0.006087980165942586
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-212
-0.8474992443116792
-0.8439973542378956
-margin:  0.0041491718619730555
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-224
-0.815454680982209
-0.8114676366858712
-margin:  0.004913374380057123
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-244
-0.8354549077119786
-0.8346083888395633
-margin:  0.0010142707451004096
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-245
-0.8794285294630011
-0.876651646037123
-margin:  0.0031676019071325
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-247
-0.8579568298040019
-0.85092672547866
-margin:  0.008261703522576935
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-267
-0.8556732240355153
-0.8493323137685441
-margin:  0.00746575888398282
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-271
-0.8004927363045254
-0.7942456234741764
-margin:  0.00786546711207925
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-315
-0.8387540207116179
-0.8337856892451859
-margin:  0.0059587631816153674
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-331
-0.7955580943286163
-0.7925498685420093
-margin:  0.0037956296581578286
-prediction by weight:  CL-1
-prediction by cosine:  CL-0
-
- SP-337
-0.8360337696371352
-0.8287803478223069
-margin:  0.008751923032305431
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-362
-0.8087448832118213
-0.8088377893887823
-margin:  -0.0001148637936800867
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-365
-0.8675259058997393
-0.8659890975478337
-margin:  0.0017746278287535944
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-370
-0.8492413492179577
-0.8463550775702049
-margin:  0.0034102372919402324
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-389
-0.82029671062911
-0.8166325625683671
-margin:  0.004486899284567913
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-396
-0.8084940280903927
-0.8039399539876607
-margin:  0.005664694334624354
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-413
-0.832877677786953
-0.831968099445236
-margin:  0.0010932851179312753
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-436
-0.8549421825994291
-0.8531713542300466
-margin:  0.0020755834810939344
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-474
-0.8587801897392098
-0.8575125842038253
-margin:  0.0014782354903415396
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-496
-0.7906147520048346
-0.7845173416320572
-margin:  0.007772180485000835
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-524
-0.8566753642567622
-0.8563082370363899
-margin:  0.00042873255738240523
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-595
-0.8653243562746951
-0.8624789491613636
-margin:  0.003299103260547165
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-629
-0.8705117654345874
-0.8705196117950293
-margin:  -9.013421795045495e-06
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-649
-0.8385574818905671
-0.8306955059113681
-margin:  0.009464329496490453
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-656
-0.8075723812550005
-0.8013097843120871
-margin:  0.007815450485594289
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-674
-0.8055096129556056
-0.8055151343557241
-margin:  -6.854495816388528e-06
-prediction by weight:  CL-0
-prediction by cosine:  CL-1
-
- SP-690
-0.815051088033957
-0.8113171823270375
-margin:  0.004602276135961647
-prediction by weight:  CL-1
-prediction by cosine:  CL-0
-
- SP-696
-0.7990296941956051
-0.7976768431399637
-margin:  0.0016959888798027123
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-702
-0.857768998769897
-0.8518343966656894
-margin:  0.006966849574796763
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-711
-0.8350164479747252
-0.8291868999945303
-margin:  0.007030439072582162
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-713
-0.8452136122558127
-0.8424035939376721
-margin:  0.0033357150163684235
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
-
- SP-723
-0.8508890388862969
-0.8491014031044767
-margin:  0.002105326613858205
-prediction by weight:  CL-1
-prediction by cosine:  CL-0
-
- SP-741
-0.8220327727882488
-0.8160874970245936
-margin:  0.007285096004204572
-prediction by weight:  CL-1
-prediction by cosine:  CL-1
-
- SP-758
-0.8320120784903647
-0.8251442331666722
-margin:  0.008323205868306927
-prediction by weight:  CL-0
-prediction by cosine:  CL-0
+ SP-490
+0.9148697944176917
+0.9083234582276127
+margin:  0.007207053974861211
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
 Fold: 2
-Misclassification: 88 out of 384
-Accuracy: 0.7708333333333334
+Misclassification: 2 out of 114
+Accuracy: 0.9824561403508771
 --------------------------------
 Graph status: -Fold 2 i Prediction graph
-*nb_of_nodes 384
-*average_degree_of_a_node 7.041666666666667
-*nb_of_edges 1352
-*average_weight_of_an_edge 0.6707487087697613
+*nb_of_nodes 455
+*average_degree_of_a_node 7.265934065934066
+*nb_of_edges 1653
+*average_weight_of_an_edge 0.828719180511895
 *minimum_weight_of_an_edge 0.00010000000000021103
 *maximum_weight_of_an_edge 1.0000000000000004
 *Is graph connected? True
 *Number of connected components: 1
 --------------------------------
----
-SVM Linear performance in pima dataset:
-                 CL-0        CL-1  accuracy   macro avg  weighted avg
-precision    0.779930    0.715000  0.763021    0.747465      0.757272
-recall       0.886000    0.533582  0.763021    0.709791      0.763021
-f1-score     0.829588    0.611111  0.763021    0.720350      0.753349
-support    500.000000  268.000000  0.763021  768.000000    768.000000
-[[443  57]
- [125 143]]
----
-SVM RBF performance in pima dataset:
-                 CL-0        CL-1  accuracy   macro avg  weighted avg
-precision    0.776577    0.676056  0.748698    0.726316      0.741499
-recall       0.862000    0.537313  0.748698    0.699657      0.748698
-f1-score     0.817062    0.598753  0.748698    0.707907      0.740881
-support    500.000000  268.000000  0.748698  768.000000    768.000000
-[[431  69]
- [124 144]]
----
-kNN performance in pima dataset:
-                 CL-0        CL-1  accuracy   macro avg  weighted avg
-precision    0.750890    0.621359  0.716146    0.686124      0.705689
-recall       0.844000    0.477612  0.716146    0.660806      0.716146
-f1-score     0.794727    0.540084  0.716146    0.667406      0.705867
-support    500.000000  268.000000  0.716146  768.000000    768.000000
-[[422  78]
- [140 128]]
----
-Gaussian RBF performance in pima dataset:
-                 CL-0        CL-1  accuracy   macro avg  weighted avg
-precision    0.765766    0.647887  0.733073    0.706827      0.724631
-recall       0.850000    0.514925  0.733073    0.682463      0.733073
-f1-score     0.805687    0.573805  0.733073    0.689746      0.724770
-support    500.000000  268.000000  0.733073  768.000000    768.000000
-[[425  75]
- [130 138]]
----
-Decision Tree performance in pima dataset:
-                 CL-0        CL-1  accuracy   macro avg  weighted avg
-precision    0.786611    0.572414  0.705729    0.679512      0.711865
-recall       0.752000    0.619403  0.705729    0.685701      0.705729
-f1-score     0.768916    0.594982  0.705729    0.681949      0.708220
-support    500.000000  268.000000  0.705729  768.000000    768.000000
-[[376 124]
- [102 166]]
----
-Random Forest performance in pima dataset:
-                 CL-0        CL-1  accuracy   macro avg  weighted avg
-precision    0.783582    0.655172  0.744792    0.719377      0.738772
-recall       0.840000    0.567164  0.744792    0.703582      0.744792
-f1-score     0.810811    0.608000  0.744792    0.709405      0.740038
-support    500.000000  268.000000  0.744792  768.000000    768.000000
-[[420  80]
- [116 152]]
----
-Naive Bayes Gaussian performance in pima dataset:
-                 CL-0        CL-1  accuracy   macro avg  weighted avg
-precision    0.799242    0.675000  0.760417    0.737121      0.755887
-recall       0.844000    0.604478  0.760417    0.724239      0.760417
-f1-score     0.821012    0.637795  0.760417    0.729403      0.757077
-support    500.000000  268.000000  0.760417  768.000000    768.000000
-[[422  78]
- [106 162]]
----
-AdaBoost performance in pima dataset:
-                 CL-0        CL-1  accuracy   macro avg  weighted avg
-precision    0.781022    0.672727      0.75    0.726875      0.743232
-recall       0.856000    0.552239      0.75    0.704119      0.750000
-f1-score     0.816794    0.606557      0.75    0.711676      0.743430
-support    500.000000  268.000000      0.75  768.000000    768.000000
-[[428  72]
- [120 148]]
----
-ANN - MLP performance in pima dataset:
-                 CL-0        CL-1  accuracy   macro avg  weighted avg
-precision    0.784200    0.626506  0.733073    0.705353      0.729172
-recall       0.814000    0.582090  0.733073    0.698045      0.733073
-f1-score     0.798822    0.603482  0.733073    0.701152      0.730657
-support    500.000000  268.000000  0.733073  768.000000    768.000000
-[[407  93]
- [112 156]]
----
-GSNAc performance in pima dataset:
-                 CL-0        CL-1  accuracy   macro avg  weighted avg
-precision    0.776801    0.708543  0.759115    0.742672      0.752982
-recall       0.884000    0.526119  0.759115    0.705060      0.759115
-f1-score     0.826941    0.603854  0.759115    0.715398      0.749093
-support    500.000000  268.000000  0.759115  768.000000    768.000000
-[[442  58]
- [127 141]]
+Raw feature importances (before optional selection step) are:
+{0: np.float64(512.5356548805969), 1: np.float64(116.84074381765937), 2: np.float64(557.4514970241503), 3: np.float64(457.3496110782607), 4: np.float64(68.42182170726468), 5: np.float64(245.2098507726701), 6: np.float64(437.12222113682003), 7: np.float64(704.49037097477), 8: np.float64(63.37717373800764), 9: np.float64(0.014772919606339207), 10: np.float64(249.88771932410467), 11: np.float64(0.00925179320566631), 12: np.float64(236.22001538244916), 13: np.float64(228.71186377835002), 14: np.float64(2.660801615519939), 15: np.float64(41.42088875565208), 16: np.float64(37.49262339089191), 17: np.float64(97.4159574235237), 18: np.float64(0.1228151679157781), 19: np.float64(4.59236142678715), 20: np.float64(663.5544136292547), 21: np.float64(131.3801694357823), 22: np.float64(689.489618558488), 23: np.float64(498.7619584905691), 24: np.float64(96.27870331832197), 25: np.float64(234.7203154048902), 26: np.float64(318.73278851848465), 27: np.float64(759.0754530135308), 28: np.float64(92.02430761998733), 29: np.float64(57.0590652546247)}
+['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
+Final feature importances are:
+{0: np.float64(6.74), 1: np.float64(1.54), 2: np.float64(7.33), 3: np.float64(6.02), 4: np.float64(0.9), 5: np.float64(3.23), 6: np.float64(5.75), 7: np.float64(9.27), 8: np.float64(0.83), 9: np.float64(0.0), 10: np.float64(3.29), 11: np.float64(0.0), 12: np.float64(3.11), 13: np.float64(3.01), 14: np.float64(0.03), 15: np.float64(0.54), 16: np.float64(0.49), 17: np.float64(1.28), 18: np.float64(0.0), 19: np.float64(0.06), 20: np.float64(8.73), 21: np.float64(1.73), 22: np.float64(9.07), 23: np.float64(6.56), 24: np.float64(1.27), 25: np.float64(3.09), 26: np.float64(4.19), 27: np.float64(9.98), 28: np.float64(1.21), 29: np.float64(0.75)}
+['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
+--------------------------------
+Graph status: -Fold 3 d Initial raw graph
+*nb_of_nodes 569
+*average_degree_of_a_node 567.9964850615114
+*nb_of_edges 161595
+*average_weight_of_an_edge 0.7631771391470841
+*minimum_weight_of_an_edge 0.02342466063961801
+*maximum_weight_of_an_edge 0.9796916477736011
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 3 e Decorated graph
+*nb_of_nodes 569
+*average_degree_of_a_node 567.9964850615114
+*nb_of_edges 161595
+*average_weight_of_an_edge 0.7631771391470841
+*minimum_weight_of_an_edge 0.02342466063961801
+*maximum_weight_of_an_edge 0.9796916477736011
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 3 f Kernel of the graph
+*nb_of_nodes 455
+*average_degree_of_a_node 7.147252747252748
+*nb_of_edges 1626
+*average_weight_of_an_edge 0.9315980094078354
+*minimum_weight_of_an_edge 0.6614708580172879
+*maximum_weight_of_an_edge 0.9796916477736011
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 3 g SNA metrics added to kernel
+*nb_of_nodes 455
+*average_degree_of_a_node 7.147252747252748
+*nb_of_edges 1626
+*average_weight_of_an_edge 0.8336710343476774
+*minimum_weight_of_an_edge 0.00010000000000021103
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
 
-SUMMARY OF CLASSIFIERS PERFORMANCES OVER  PIMA
+ SP-14
+0.9309481290256013
+0.9275316072772258
+margin:  0.003683455875325592
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-45
+0.9368080708485726
+0.9319881353428996
+margin:  0.00517167045683431
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-90
+0.9357061326977654
+0.9274449349403261
+margin:  0.008907480591255679
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
+
+ SP-101
+0.9349424136907627
+0.9319369948516526
+margin:  0.0032249163363113897
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-172
+0.9293795568353144
+0.9287734897562174
+margin:  0.0006525456268740015
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-424
+0.9494365492460466
+0.940340674633
+margin:  0.009672956683062228
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
+
+ SP-515
+0.9427986926190954
+0.9367701202505687
+margin:  0.006435487467207235
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
+
+ SP-537
+0.931252794366167
+0.9225510234091419
+margin:  0.009432292346139404
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+Fold: 3
+Misclassification: 2 out of 114
+Accuracy: 0.9824561403508771
+--------------------------------
+Graph status: -Fold 3 i Prediction graph
+*nb_of_nodes 455
+*average_degree_of_a_node 7.147252747252748
+*nb_of_edges 1626
+*average_weight_of_an_edge 0.8336710343476774
+*minimum_weight_of_an_edge 0.00010000000000021103
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+Raw feature importances (before optional selection step) are:
+{0: np.float64(540.3826863882483), 1: np.float64(101.93397698935685), 2: np.float64(580.045774605699), 3: np.float64(469.50696302751237), 4: np.float64(64.01305753536607), 5: np.float64(253.4950447042251), 6: np.float64(415.8123839764184), 7: np.float64(681.165610673492), 8: np.float64(56.03578601387465), 9: np.float64(0.1750428241132236), 10: np.float64(202.27919244708704), 11: np.float64(0.005731626181787466), 12: np.float64(189.27276884203076), 13: np.float64(179.55884944492712), 14: np.float64(4.31921631681014), 15: np.float64(41.86730412245166), 16: np.float64(27.067499721971355), 17: np.float64(79.9925411211735), 18: np.float64(0.03489499593712861), 19: np.float64(2.0460133305099726), 20: np.float64(731.3963017395927), 21: np.float64(131.85549807134635), 22: np.float64(746.135060485133), 23: np.float64(557.4014514959462), 24: np.float64(86.90946610475673), 25: np.float64(253.7462265785552), 26: np.float64(334.2013315185544), 27: np.float64(777.2918589613705), 28: np.float64(100.77763964429685), 29: np.float64(49.35229059621436)}
+['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
+Final feature importances are:
+{0: np.float64(7.06), 1: np.float64(1.33), 2: np.float64(7.57), 3: np.float64(6.13), 4: np.float64(0.84), 5: np.float64(3.31), 6: np.float64(5.43), 7: np.float64(8.89), 8: np.float64(0.73), 9: np.float64(0.0), 10: np.float64(2.64), 11: np.float64(0.0), 12: np.float64(2.47), 13: np.float64(2.34), 14: np.float64(0.06), 15: np.float64(0.55), 16: np.float64(0.35), 17: np.float64(1.04), 18: np.float64(0.0), 19: np.float64(0.03), 20: np.float64(9.55), 21: np.float64(1.72), 22: np.float64(9.74), 23: np.float64(7.28), 24: np.float64(1.13), 25: np.float64(3.31), 26: np.float64(4.36), 27: np.float64(10.15), 28: np.float64(1.32), 29: np.float64(0.64)}
+['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
+--------------------------------
+Graph status: -Fold 4 d Initial raw graph
+*nb_of_nodes 569
+*average_degree_of_a_node 567.9964850615114
+*nb_of_edges 161595
+*average_weight_of_an_edge 0.7648083592721429
+*minimum_weight_of_an_edge 0.022746824379890063
+*maximum_weight_of_an_edge 0.9802826478820506
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 4 e Decorated graph
+*nb_of_nodes 569
+*average_degree_of_a_node 567.9964850615114
+*nb_of_edges 161595
+*average_weight_of_an_edge 0.7648083592721429
+*minimum_weight_of_an_edge 0.022746824379890063
+*maximum_weight_of_an_edge 0.9802826478820506
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 4 f Kernel of the graph
+*nb_of_nodes 455
+*average_degree_of_a_node 7.147252747252748
+*nb_of_edges 1626
+*average_weight_of_an_edge 0.9334373350934617
+*minimum_weight_of_an_edge 0.6905821275434736
+*maximum_weight_of_an_edge 0.9802826478820506
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 4 g SNA metrics added to kernel
+*nb_of_nodes 455
+*average_degree_of_a_node 7.147252747252748
+*nb_of_edges 1626
+*average_weight_of_an_edge 0.8222486956045697
+*minimum_weight_of_an_edge 0.00010000000000021103
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+
+ SP-87
+0.944637946345573
+0.9366909753955318
+margin:  0.008484090440484371
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-185
+0.943221974512797
+0.9364159614914768
+margin:  0.007268151442527682
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
+
+ SP-292
+0.9475835951410424
+0.9416746309730505
+margin:  0.006274953124611793
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
+
+ SP-449
+0.937883857582561
+0.9357794826192593
+margin:  0.002248793655329484
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-0.0
+
+ SP-543
+0.9423643855246444
+0.9389342469144574
+margin:  0.0036532255815135972
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
+Fold: 4
+Misclassification: 6 out of 114
+Accuracy: 0.9473684210526316
+--------------------------------
+Graph status: -Fold 4 i Prediction graph
+*nb_of_nodes 455
+*average_degree_of_a_node 7.147252747252748
+*nb_of_edges 1626
+*average_weight_of_an_edge 0.8222486956045697
+*minimum_weight_of_an_edge 0.00010000000000021103
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+Raw feature importances (before optional selection step) are:
+{0: np.float64(491.8272402280541), 1: np.float64(96.5602787642773), 2: np.float64(527.5202284212547), 3: np.float64(426.0614174136603), 4: np.float64(72.20498804318169), 5: np.float64(257.3203464183558), 6: np.float64(415.35031680461), 7: np.float64(689.9071253090774), 8: np.float64(48.274896689727264), 9: np.float64(0.04527135797113438), 10: np.float64(191.66344512126201), 11: np.float64(0.7566374507333343), 12: np.float64(179.58409791587144), 13: np.float64(168.8242031464954), 14: np.float64(1.3105093411760924), 15: np.float64(42.3398707237431), 16: np.float64(30.220205487041873), 17: np.float64(90.56193342739962), 18: np.float64(0.19026834734368767), 19: np.float64(2.744412327976962), 20: np.float64(636.9152831009111), 21: np.float64(118.68356942896013), 22: np.float64(667.1920439521797), 23: np.float64(484.0121431141345), 24: np.float64(112.66884149379085), 25: np.float64(254.63896485443445), 26: np.float64(375.09969358370853), 27: np.float64(785.7581006255177), 28: np.float64(91.88311168219495), 29: np.float64(56.28743072667093)}
+['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
+Final feature importances are:
+{0: np.float64(6.72), 1: np.float64(1.32), 2: np.float64(7.21), 3: np.float64(5.82), 4: np.float64(0.99), 5: np.float64(3.52), 6: np.float64(5.68), 7: np.float64(9.43), 8: np.float64(0.66), 9: np.float64(0.0), 10: np.float64(2.62), 11: np.float64(0.01), 12: np.float64(2.45), 13: np.float64(2.31), 14: np.float64(0.02), 15: np.float64(0.58), 16: np.float64(0.41), 17: np.float64(1.24), 18: np.float64(0.0), 19: np.float64(0.04), 20: np.float64(8.71), 21: np.float64(1.62), 22: np.float64(9.12), 23: np.float64(6.62), 24: np.float64(1.54), 25: np.float64(3.48), 26: np.float64(5.13), 27: np.float64(10.74), 28: np.float64(1.26), 29: np.float64(0.77)}
+['numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical', 'numerical']
+--------------------------------
+Graph status: -Fold 5 d Initial raw graph
+*nb_of_nodes 569
+*average_degree_of_a_node 567.9964850615114
+*nb_of_edges 161595
+*average_weight_of_an_edge 0.7586855753169579
+*minimum_weight_of_an_edge 0.0214745053955554
+*maximum_weight_of_an_edge 0.9792098752680628
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 5 e Decorated graph
+*nb_of_nodes 569
+*average_degree_of_a_node 567.9964850615114
+*nb_of_edges 161595
+*average_weight_of_an_edge 0.7586855753169579
+*minimum_weight_of_an_edge 0.0214745053955554
+*maximum_weight_of_an_edge 0.9792098752680628
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 5 f Kernel of the graph
+*nb_of_nodes 456
+*average_degree_of_a_node 7.206140350877193
+*nb_of_edges 1643
+*average_weight_of_an_edge 0.9312321550825071
+*minimum_weight_of_an_edge 0.682929426878504
+*maximum_weight_of_an_edge 0.9764886638620375
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 5 g SNA metrics added to kernel
+*nb_of_nodes 456
+*average_degree_of_a_node 7.206140350877193
+*nb_of_edges 1643
+*average_weight_of_an_edge 0.8286495615985223
+*minimum_weight_of_an_edge 0.00010000000000021103
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+
+ SP-397
+0.9473627484100493
+0.9413039458074467
+margin:  0.00643660597577278
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
+
+ SP-542
+0.9348379887726692
+0.9314667040438027
+margin:  0.003619329294574536
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
+Fold: 5
+Misclassification: 2 out of 113
+Accuracy: 0.9823008849557522
+--------------------------------
+Graph status: -Fold 5 i Prediction graph
+*nb_of_nodes 456
+*average_degree_of_a_node 7.206140350877193
+*nb_of_edges 1643
+*average_weight_of_an_edge 0.8286495615985223
+*minimum_weight_of_an_edge 0.00010000000000021103
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+---
+SVM Linear performance in breast_cancer dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.975962    0.975069  0.975395    0.975515      0.975402
+recall       0.957547    0.985994  0.975395    0.971771      0.975395
+f1-score     0.966667    0.980501  0.975395    0.973584      0.975347
+support    212.000000  357.000000  0.975395  569.000000    569.000000
+[[203   9]
+ [  5 352]]
+---
+SVM RBF performance in breast_cancer dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.976077    0.977778  0.977153    0.976927      0.977144
+recall       0.962264    0.985994  0.977153    0.974129      0.977153
+f1-score     0.969121    0.981869  0.977153    0.975495      0.977119
+support    212.000000  357.000000  0.977153  569.000000    569.000000
+[[204   8]
+ [  5 352]]
+---
+kNN performance in breast_cancer dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.984848    0.954178  0.964851    0.969513      0.965605
+recall       0.919811    0.991597  0.964851    0.955704      0.964851
+f1-score     0.951220    0.972527  0.964851    0.961873      0.964588
+support    212.000000  357.000000  0.964851  569.000000    569.000000
+[[195  17]
+ [  3 354]]
+---
+Gaussian RBF performance in breast_cancer dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.975369    0.961749  0.966608    0.968559      0.966824
+recall       0.933962    0.985994  0.966608    0.959978      0.966608
+f1-score     0.954217    0.973721  0.966608    0.963969      0.966454
+support    212.000000  357.000000  0.966608  569.000000    569.000000
+[[198  14]
+ [  5 352]]
+---
+Decision Tree performance in breast_cancer dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.881818    0.948424  0.922671    0.915121      0.923608
+recall       0.915094    0.927171  0.922671    0.921133      0.922671
+f1-score     0.898148    0.937677  0.922671    0.917913      0.922949
+support    212.000000  357.000000  0.922671  569.000000    569.000000
+[[194  18]
+ [ 26 331]]
+---
+Random Forest performance in breast_cancer dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.965854    0.961538  0.963093    0.963696      0.963146
+recall       0.933962    0.980392  0.963093    0.957177      0.963093
+f1-score     0.949640    0.970874  0.963093    0.960257      0.962963
+support    212.000000  357.000000  0.963093  569.000000    569.000000
+[[198  14]
+ [  7 350]]
+---
+Naive Bayes Gaussian performance in breast_cancer dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.913462    0.939058  0.929701    0.926260      0.929521
+recall       0.896226    0.949580  0.929701    0.922903      0.929701
+f1-score     0.904762    0.944290  0.929701    0.924526      0.929562
+support    212.000000  357.000000  0.929701  569.000000    569.000000
+[[190  22]
+ [ 18 339]]
+---
+AdaBoost performance in breast_cancer dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.985222    0.967213  0.973638    0.976217      0.973923
+recall       0.943396    0.991597  0.973638    0.967496      0.973638
+f1-score     0.963855    0.979253  0.973638    0.971554      0.973516
+support    212.000000  357.000000  0.973638  569.000000    569.000000
+[[200  12]
+ [  3 354]]
+---
+ANN - MLP performance in breast_cancer dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.985507    0.977901  0.980668    0.981704      0.980735
+recall       0.962264    0.991597  0.980668    0.976930      0.980668
+f1-score     0.973747    0.984701  0.980668    0.979224      0.980620
+support    212.000000  357.000000  0.980668  569.000000    569.000000
+[[204   8]
+ [  3 354]]
+---
+GSNAc performance in breast_cancer dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.970874    0.966942  0.968366    0.968908      0.968407
+recall       0.943396    0.983193  0.968366    0.963295      0.968366
+f1-score     0.956938    0.975000  0.968366    0.965969      0.968270
+support    212.000000  357.000000  0.968366  569.000000    569.000000
+[[200  12]
+ [  6 351]]
+
+SUMMARY OF CLASSIFIERS PERFORMANCES OVER  BREAST_CANCER
                      precision    recall  f1-score support
-Naive Bayes Gaussian  0.755887  0.760417  0.757077   768.0
-SVM Linear            0.757272  0.763021  0.753349   768.0
-GSNAc                 0.752982  0.759115  0.749093   768.0
-AdaBoost              0.743232      0.75   0.74343   768.0
-SVM RBF               0.741499  0.748698  0.740881   768.0
-Random Forest         0.738772  0.744792  0.740038   768.0
-ANN - MLP             0.729172  0.733073  0.730657   768.0
-Gaussian RBF          0.724631  0.733073   0.72477   768.0
-Decision Tree         0.711865  0.705729   0.70822   768.0
-kNN                   0.705689  0.716146  0.705867   768.0
-Time elapsed in seconds:  628.7233347892761
+ANN - MLP             0.980735  0.980668   0.98062   569.0
+SVM RBF               0.977144  0.977153  0.977119   569.0
+SVM Linear            0.975402  0.975395  0.975347   569.0
+AdaBoost              0.973923  0.973638  0.973516   569.0
+GSNAc                 0.968407  0.968366   0.96827   569.0
+Gaussian RBF          0.966824  0.966608  0.966454   569.0
+kNN                   0.965605  0.964851  0.964588   569.0
+Random Forest         0.963146  0.963093  0.962963   569.0
+Naive Bayes Gaussian  0.929521  0.929701  0.929562   569.0
+Decision Tree         0.923608  0.922671  0.922949   569.0
+Time elapsed in seconds:  489.2525985240936
