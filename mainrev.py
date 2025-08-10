@@ -87,7 +87,7 @@ def main(cv_value,
 
     #Name of the dataset to experiment   titanic
     # selected_dataset = 'iris' if (args.selected_dataset is None) else args.selected_dataset
-    selected_dataset = 'pima' if (args.selected_dataset is None) else args.selected_dataset
+    selected_dataset = 'make_blobs' if (args.selected_dataset is None) else args.selected_dataset
 
     #set a random seed number 
     #it is needed for some functions and used for reproducibility of results

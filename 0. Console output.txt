@@ -1,0 +1,409 @@
+--------------------------------
+Dataset charecteristics BEFORE processing:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 300 entries, 0 to 299
+Data columns (total 3 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   0       300 non-null    float64
+ 1   1       300 non-null    float64
+ 2   2       300 non-null    float64
+dtypes: float64(3)
+memory usage: 7.2 KB
+None
+--------------------------------
+--------------------------------
+Dataset charecteristics AFTER processing:
+<class 'pandas.core.frame.DataFrame'>
+Index: 300 entries, SP-1 to SP-300
+Data columns (total 3 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   0       300 non-null    float64
+ 1   1       300 non-null    float64
+ 2   class   300 non-null    object 
+dtypes: float64(2), object(1)
+memory usage: 9.4+ KB
+None
+--------------------------------
+SVM Linear started..
+SVM RBF started..
+kNN started..
+Gaussian RBF started..
+Decision Tree started..
+Random Forest started..
+Naive Bayes Gaussian started..
+AdaBoost started..
+ANN - MLP started..
+--------------------------------
+Dataset charecteristics BEFORE processing:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 300 entries, 0 to 299
+Data columns (total 3 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   0       300 non-null    float64
+ 1   1       300 non-null    float64
+ 2   2       300 non-null    float64
+dtypes: float64(3)
+memory usage: 7.2 KB
+None
+--------------------------------
+--------------------------------
+Dataset charecteristics AFTER processing:
+<class 'pandas.core.frame.DataFrame'>
+Index: 300 entries, SP-1 to SP-300
+Data columns (total 3 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   0       300 non-null    float64
+ 1   1       300 non-null    float64
+ 2   class   300 non-null    object 
+dtypes: float64(2), object(1)
+memory usage: 9.4+ KB
+None
+--------------------------------
+Raw feature importances (before optional selection step) are:
+{0: np.float64(8.636454647837873), 1: np.float64(55.33637871359801)}
+['numerical', 'numerical']
+Final feature importances are:
+{0: np.float64(13.5), 1: np.float64(86.5)}
+['numerical', 'numerical']
+--------------------------------
+Graph status: -Fold 1 d Initial raw graph
+*nb_of_nodes 300
+*average_degree_of_a_node 298.99333333333334
+*nb_of_edges 44849
+*average_weight_of_an_edge 0.7578466656525352
+*minimum_weight_of_an_edge 0.020630901477206476
+*maximum_weight_of_an_edge 0.9993897812191848
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 1 e Decorated graph
+*nb_of_nodes 300
+*average_degree_of_a_node 298.99333333333334
+*nb_of_edges 44849
+*average_weight_of_an_edge 0.7578466656525352
+*minimum_weight_of_an_edge 0.020630901477206476
+*maximum_weight_of_an_edge 0.9993897812191848
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 1 f Kernel of the graph
+*nb_of_nodes 150
+*average_degree_of_a_node 6.333333333333333
+*nb_of_edges 475
+*average_weight_of_an_edge 0.9585276406984709
+*minimum_weight_of_an_edge 0.7745961075619616
+*maximum_weight_of_an_edge 0.998818699652162
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 1 g SNA metrics added to kernel
+*nb_of_nodes 150
+*average_degree_of_a_node 6.333333333333333
+*nb_of_edges 475
+*average_weight_of_an_edge 0.7559214426405971
+*minimum_weight_of_an_edge 0.00010000000000021103
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+
+ SP-19
+0.8749611922472199
+0.8679043157632115
+margin:  0.008130938348662076
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-1.0
+
+ SP-36
+0.9272634223753299
+0.9260831004611338
+margin:  0.001274531317554839
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-51
+0.8798345598034671
+0.8773938551552835
+margin:  0.0027817662887001937
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-1.0
+
+ SP-109
+0.9326277361795975
+0.924065631781749
+margin:  0.00926568860843724
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-120
+0.9250285630414136
+0.9196938280758056
+margin:  0.005800555361743953
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-0.0
+
+ SP-139
+0.9269862803265206
+0.9185988660126766
+margin:  0.00913066042662436
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-0.0
+
+ SP-185
+0.9205383906617134
+0.9196238022059082
+margin:  0.0009945245584241924
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-197
+0.91838196475622
+0.912867540869001
+margin:  0.006040771130902067
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-242
+0.9271692512696237
+0.9257120362971575
+margin:  0.0015741558015114343
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-0.0
+
+ SP-300
+0.9253477156396126
+0.9247400874548598
+margin:  0.0006570799654908033
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-0.0
+Fold: 1
+Misclassification: 31 out of 150
+Accuracy: 0.7933333333333333
+--------------------------------
+Graph status: -Fold 1 i Prediction graph
+*nb_of_nodes 150
+*average_degree_of_a_node 6.333333333333333
+*nb_of_edges 475
+*average_weight_of_an_edge 0.7559214426405971
+*minimum_weight_of_an_edge 0.00010000000000021103
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+Raw feature importances (before optional selection step) are:
+{0: np.float64(0.18112447806260673), 1: np.float64(87.86031372997958)}
+['numerical', 'numerical']
+Final feature importances are:
+{0: np.float64(0.21), 1: np.float64(99.79)}
+['numerical', 'numerical']
+--------------------------------
+Graph status: -Fold 2 d Initial raw graph
+*nb_of_nodes 300
+*average_degree_of_a_node 298.99333333333334
+*nb_of_edges 44849
+*average_weight_of_an_edge 0.7825764439234861
+*minimum_weight_of_an_edge 0.01825500257602186
+*maximum_weight_of_an_edge 0.9997377541898443
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 2 e Decorated graph
+*nb_of_nodes 300
+*average_degree_of_a_node 298.99333333333334
+*nb_of_edges 44849
+*average_weight_of_an_edge 0.7825764439234861
+*minimum_weight_of_an_edge 0.01825500257602186
+*maximum_weight_of_an_edge 0.9997377541898443
+*Is graph connected? True
+*Number of connected components: 1
+--------------------------------
+--------------------------------
+Graph status: -Fold 2 f Kernel of the graph
+*nb_of_nodes 150
+*average_degree_of_a_node 6.16
+*nb_of_edges 462
+*average_weight_of_an_edge 0.9817705220062969
+*minimum_weight_of_an_edge 0.8108045979541243
+*maximum_weight_of_an_edge 0.9997377541898443
+*Is graph connected? False
+*Number of connected components: 2
+--------------------------------
+--------------------------------
+Graph status: -Fold 2 g SNA metrics added to kernel
+*nb_of_nodes 150
+*average_degree_of_a_node 6.16
+*nb_of_edges 462
+*average_weight_of_an_edge 0.7650965998190894
+*minimum_weight_of_an_edge 9.999999999976694e-05
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? False
+*Number of connected components: 2
+--------------------------------
+
+ SP-12
+0.9545988215105622
+0.9507130668521502
+margin:  0.0040872002225422754
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-50
+0.9542059474072991
+0.9530944963621372
+margin:  0.0011661498932207248
+prediction by weight:  CL-1.0
+prediction by cosine:  CL-0.0
+
+ SP-89
+0.957513285848007
+0.9486062935972303
+margin:  0.009389556353247785
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-123
+0.9567517232764331
+0.9498579695212788
+margin:  0.007257667963378456
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-125
+0.9546242511401642
+0.9544073908010348
+margin:  0.00022721988662244286
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+
+ SP-251
+0.9524937983997358
+0.9449581402595573
+margin:  0.007974594660995926
+prediction by weight:  CL-0.0
+prediction by cosine:  CL-0.0
+Fold: 2
+Misclassification: 39 out of 150
+Accuracy: 0.74
+--------------------------------
+Graph status: -Fold 2 i Prediction graph
+*nb_of_nodes 150
+*average_degree_of_a_node 6.16
+*nb_of_edges 462
+*average_weight_of_an_edge 0.7650965998190894
+*minimum_weight_of_an_edge 9.999999999976694e-05
+*maximum_weight_of_an_edge 1.0
+*Is graph connected? False
+*Number of connected components: 2
+--------------------------------
+---
+SVM Linear performance in make_blobs dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.786207    0.767742  0.776667    0.776974      0.776974
+recall       0.760000    0.793333  0.776667    0.776667      0.776667
+f1-score     0.772881    0.780328  0.776667    0.776605      0.776605
+support    150.000000  150.000000  0.776667  300.000000    300.000000
+[[114  36]
+ [ 31 119]]
+---
+SVM RBF performance in make_blobs dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.804348    0.759259      0.78    0.781804      0.781804
+recall       0.740000    0.820000      0.78    0.780000      0.780000
+f1-score     0.770833    0.788462      0.78    0.779647      0.779647
+support    150.000000  150.000000      0.78  300.000000    300.000000
+[[111  39]
+ [ 27 123]]
+---
+kNN performance in make_blobs dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.741722    0.744966  0.743333    0.743344      0.743344
+recall       0.746667    0.740000  0.743333    0.743333      0.743333
+f1-score     0.744186    0.742475  0.743333    0.743330      0.743330
+support    150.000000  150.000000  0.743333  300.000000    300.000000
+[[112  38]
+ [ 39 111]]
+---
+Gaussian RBF performance in make_blobs dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.782313    0.771242  0.776667    0.776777      0.776777
+recall       0.766667    0.786667  0.776667    0.776667      0.776667
+f1-score     0.774411    0.778878  0.776667    0.776644      0.776644
+support    150.000000  150.000000  0.776667  300.000000    300.000000
+[[115  35]
+ [ 32 118]]
+---
+Decision Tree performance in make_blobs dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.684524    0.734848  0.706667    0.709686      0.709686
+recall       0.766667    0.646667  0.706667    0.706667      0.706667
+f1-score     0.723270    0.687943  0.706667    0.705607      0.705607
+support    150.000000  150.000000  0.706667  300.000000    300.000000
+[[115  35]
+ [ 53  97]]
+---
+Random Forest performance in make_blobs dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.715190    0.739437  0.726667    0.727313      0.727313
+recall       0.753333    0.700000  0.726667    0.726667      0.726667
+f1-score     0.733766    0.719178  0.726667    0.726472      0.726472
+support    150.000000  150.000000  0.726667  300.000000    300.000000
+[[113  37]
+ [ 45 105]]
+---
+Naive Bayes Gaussian performance in make_blobs dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.782313    0.771242  0.776667    0.776777      0.776777
+recall       0.766667    0.786667  0.776667    0.776667      0.776667
+f1-score     0.774411    0.778878  0.776667    0.776644      0.776644
+support    150.000000  150.000000  0.776667  300.000000    300.000000
+[[115  35]
+ [ 32 118]]
+---
+AdaBoost performance in make_blobs dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.737179    0.756944  0.746667    0.747062      0.747062
+recall       0.766667    0.726667  0.746667    0.746667      0.746667
+f1-score     0.751634    0.741497  0.746667    0.746565      0.746565
+support    150.000000  150.000000  0.746667  300.000000    300.000000
+[[115  35]
+ [ 41 109]]
+---
+ANN - MLP performance in make_blobs dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.777027    0.769737  0.773333    0.773382      0.773382
+recall       0.766667    0.780000  0.773333    0.773333      0.773333
+f1-score     0.771812    0.774834  0.773333    0.773323      0.773323
+support    150.000000  150.000000  0.773333  300.000000    300.000000
+[[115  35]
+ [ 33 117]]
+---
+GSNAc performance in make_blobs dataset:
+               CL-0.0      CL-1.0  accuracy   macro avg  weighted avg
+precision    0.763158    0.770270  0.766667    0.766714      0.766714
+recall       0.773333    0.760000  0.766667    0.766667      0.766667
+f1-score     0.768212    0.765101  0.766667    0.766656      0.766656
+support    150.000000  150.000000  0.766667  300.000000    300.000000
+[[116  34]
+ [ 36 114]]
+
+SUMMARY OF CLASSIFIERS PERFORMANCES OVER  MAKE_BLOBS
+                     precision    recall  f1-score support
+SVM RBF               0.781804      0.78  0.779647   300.0
+Gaussian RBF          0.776777  0.776667  0.776644   300.0
+Naive Bayes Gaussian  0.776777  0.776667  0.776644   300.0
+SVM Linear            0.776974  0.776667  0.776605   300.0
+ANN - MLP             0.773382  0.773333  0.773323   300.0
+GSNAc                 0.766714  0.766667  0.766656   300.0
+AdaBoost              0.747062  0.746667  0.746565   300.0
+kNN                   0.743344  0.743333   0.74333   300.0
+Random Forest         0.727313  0.726667  0.726472   300.0
+Decision Tree         0.709686  0.706667  0.705607   300.0
+Time elapsed in seconds:  61.99479651451111
