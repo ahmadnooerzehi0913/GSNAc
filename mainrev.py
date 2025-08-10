@@ -27,6 +27,23 @@ D3- Display GSNAc performance
 E - Compare performance with different classifiers 
 '''
 
+
+cv_value=5
+dist_to_similarity_method='max'
+feature_importance_model='k_best_based'
+feature_selection_method='none'
+keep_top_n_edges_to_test=5
+kernel_edge_size=5
+kernel_node_filter='No'
+kernel_node_size=0
+kernel_strategy='keep_n_strongest'
+lpa_after_kernel='No'
+lpa_before_kernel='No'
+prediction_strategy='weight'
+seed_number=0
+selected_dataset='breast_cancer'
+
+
 def main(cv_value, 
          selected_dataset, 
          seed_number, 
@@ -86,29 +103,29 @@ def main(cv_value,
     """
 
     #Name of the dataset to experiment   titanic
-    # selected_dataset = 'iris' if (args.selected_dataset is None) else args.selected_dataset
-    selected_dataset = 'pima' if (args.selected_dataset is None) else args.selected_dataset
+    # selected_dataset = 'iris' if (selected_dataset is None) else selected_dataset
+    selected_dataset = 'pima' if (selected_dataset is None) else selected_dataset
 
     #set a random seed number 
     #it is needed for some functions and used for reproducibility of results
-    seed_number = 0 if (args.seed_number is None) else args.seed_number
+    seed_number = 0 if (seed_number is None) else seed_number
 
     #cross validation value
-    cv_value = 2 if (args.cv_value is None) else args.cv_value
+    cv_value = 2 if (cv_value is None) else cv_value
     
     #other parameters
-    feature_importance_model = 'k_best_based' if (args.feature_importance_model is None) else args.feature_importance_model
-    feature_selection_method = 'none' if (args.feature_selection_method is None) else args.feature_selection_method
-    dist_to_similarity_method = 'max' if (args.dist_to_similarity_method is None) else args.dist_to_similarity_method
+    feature_importance_model = 'k_best_based' if (feature_importance_model is None) else feature_importance_model
+    feature_selection_method = 'none' if (feature_selection_method is None) else feature_selection_method
+    dist_to_similarity_method = 'max' if (dist_to_similarity_method is None) else dist_to_similarity_method
 
-    lpa_before_kernel = 'No' if (args.lpa_before_kernel is None) else args.lpa_before_kernel
-    lpa_after_kernel = 'No' if (args.lpa_after_kernel is None) else args.lpa_after_kernel
-    kernel_strategy = 'keep_n_strongest' if (args.kernel_strategy is None) else args.kernel_strategy
-    kernel_edge_size = 5 if (args.kernel_edge_size is None) else args.kernel_edge_size
-    kernel_node_filter = 'No' if (args.kernel_node_filter is None) else args.kernel_node_filter
-    kernel_node_size = 5 if (args.kernel_node_size is None) else args.kernel_node_size
-    prediction_strategy = 'weight' if (args.prediction_strategy is None) else args.prediction_strategy
-    keep_top_n_edges_to_test = 25 if (args.keep_top_n_edges_to_test is None) else args.keep_top_n_edges_to_test
+    lpa_before_kernel = 'No' if (lpa_before_kernel is None) else lpa_before_kernel
+    lpa_after_kernel = 'No' if (lpa_after_kernel is None) else lpa_after_kernel
+    kernel_strategy = 'keep_n_strongest' if (kernel_strategy is None) else kernel_strategy
+    kernel_edge_size = 5 if (kernel_edge_size is None) else kernel_edge_size
+    kernel_node_filter = 'No' if (kernel_node_filter is None) else kernel_node_filter
+    kernel_node_size = 5 if (kernel_node_size is None) else kernel_node_size
+    prediction_strategy = 'weight' if (prediction_strategy is None) else prediction_strategy
+    keep_top_n_edges_to_test = 25 if (keep_top_n_edges_to_test is None) else keep_top_n_edges_to_test
    
 
     #reporting parameters
@@ -478,18 +495,21 @@ parser.add_argument('--keep_top_n_edges_to_test', type=int)
 #Retrieve parameters
 args = parser.parse_args()
 
-main(args.cv_value,
-     args.selected_dataset,
-     args.seed_number, 
-     args.feature_importance_model,
-     args.feature_selection_method, 
-     args.dist_to_similarity_method,
-     args.lpa_before_kernel,
-     args.lpa_after_kernel,
-     args.kernel_strategy,
-     args.kernel_edge_size,
-     args.kernel_node_filter,
-     args.kernel_node_size,
-     args.prediction_strategy,
-     args.keep_top_n_edges_to_test     
+
+
+
+main(cv_value,
+     selected_dataset,
+     seed_number, 
+     feature_importance_model,
+     feature_selection_method, 
+     dist_to_similarity_method,
+     lpa_before_kernel,
+     lpa_after_kernel,
+     kernel_strategy,
+     kernel_edge_size,
+     kernel_node_filter,
+     kernel_node_size,
+     prediction_strategy,
+     keep_top_n_edges_to_test     
      )
